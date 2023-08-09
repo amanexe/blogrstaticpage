@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-image: linear-gradient(to left, orange, darkred); 
+    border-bottom-left-radius: 120px;
+    height: 550px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 280px;
+    gap: 1em;
+    color: aliceblue;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.left-nav a:hover {
+    text-decoration: underline;
+    color: rgb(125, 146, 184);
+}
+
+.blogr {
+    margin-right: 70px;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 270px;
+    gap: 1.5em;
+    color: aqua;
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.right-nav a:hover {
+    color: blueviolet;
+}
+
+.nav-btn {
+    display: flex;
+    border: 0.5px solid black;
+    border-radius: 19px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 8px;
+    /* margin-top: 20px;
+    margin-bottom: 40px;  */
+    background-color: aliceblue; 
+    color: black;
+    font-weight: 700;
+    font-size: large;
+    transition-duration: 0.4s;
+}
+
+.nav-btn:hover {
+    animation: bounce 1s;
+    background-color: blueviolet;
+}
+
+.banner-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    font-size: larger;
+}
+
+.banner-main h2 {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+.banner-main p {
+    margin-top: 20px;
+    font-size: large;
+    color: aliceblue;
+}
+
+.btn-banner {
+    display: inline-block;
+}
+
+
+.btn-banner button {
+    border: 0.5px solid black;
+    border-radius: 19px;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    background-color: rgb(180, 144, 76);   
+    color: black;
+    font-weight: 700;
+    font-size: large;
+    transition-duration: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+.banner-main button:hover {
+    animation: bounce 1s;
+    background-color: azure;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-left: 220px;
+    height: 350px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+}
+
+.top {
+    width: 700px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.top p {
+    font-size: large;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.bottom {
+    width: 700px;
+    margin-top: 20px;
+}
+
+.bottom p {
+    font-size: large;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 220px;
+    }
+}
+
+.desktop-img {
+    position: absolute;
+    right: 10%;
+    transition: none;
+    z-index: -1;
+}
+
+.mid {
+   background-color: rgba(23, 25, 94, 0.9);
+   width: 100%;
+   border-bottom-left-radius: 120px;
+   border-top-right-radius: 120px;
+}
+
+#mid-section {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    margin-top: 250px;
+    flex-flow: column nowrap;
+    height: 450px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: 180px;
+    text-align: right;
+    color: aliceblue;
+    animation-duration: 3s;
+    animation-name: slideout;
+}
+
+.mid p {
+    font-size: large;
+    margin-top: 20px;
+    font-size: large;
+    font-weight: 500;
+    z-index: 1;
+}
+
+@keyframes slideout {
+    from {
+        margin-right: 100%;
+    }
+    to {
+        margin-right: 180px;
+    }
+}
+
+.phone-image {
+    position: absolute;
+    left: 10%;
+    animation: none;
+}
+
+#bottom-last {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 220px;
+    height: 600px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.bottom-up {
+    width: 700px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bottom-up p {
+    font-size: large;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.bottom-down {
+    width: 700px;
+    margin-top: 20px;
+}
+
+.bottom-down p {
+    font-size: large;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.laptop {
+    position: absolute;
+    right: 5%;
+    animation: none;
+    z-index: -1;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 35, 35);
+    height: 400px;
+    gap: 350px;
+    justify-content: center;
+    border-top-right-radius: 120px;
+    padding-left: 80px;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 10%;
+    color: white;
+    margin-top: 70px;
+}
+
+.footer ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    font-size: large;
+}
+
+.footer, li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.footer, h2 {
+    display: flex;
+    flex-direction: row;
+}
